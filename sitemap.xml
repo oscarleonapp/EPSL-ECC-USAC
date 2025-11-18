@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+   <!-- Homepage -->
+   <url>
+      <loc>https://epslecc.com/</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <!-- Main Pages -->
+   <url>
+      <loc>https://epslecc.com/index.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://epslecc.com/requisitos-inscripcion-eps-ecc-usac.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://epslecc.com/charla-informativa.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Fases -->
+   <url>
+      <loc>https://epslecc.com/fase1.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://epslecc.com/fase2.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://epslecc.com/fase3.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Propedéuticos -->
+   <url>
+      <loc>https://epslecc.com/propedeutico-diagnostico.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://epslecc.com/propedeutico-plan-comunicacion.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <!-- Información -->
+   <url>
+      <loc>https://epslecc.com/equipo-epsl-ecc.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://epslecc.com/contact.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://epslecc.com/faqs.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://epslecc.com/guia-doc.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+</urlset>

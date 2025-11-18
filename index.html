@@ -5,6 +5,36 @@
    <!-- Required meta tags -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- SEO Meta Tags -->
+   <meta name="description" content="Ejercicio Profesional Supervisado de Licenciatura (EPSL) de la Escuela de Ciencias de la Comunicación, Universidad de San Carlos de Guatemala. Información completa sobre requisitos, fases y proceso de graduación." />
+   <meta name="keywords" content="EPSL, ECC, USAC, Ejercicio Profesional Supervisado, Licenciatura, Ciencias de la Comunicación, Universidad San Carlos Guatemala, Graduación, Tesis" />
+   <meta name="author" content="Escuela de Ciencias de la Comunicación - USAC" />
+   <meta name="robots" content="index, follow" />
+   <meta name="language" content="Spanish" />
+   <meta name="revisit-after" content="7 days" />
+   <meta name="theme-color" content="#8b3dff" />
+
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="https://epslecc.com/" />
+   <meta property="og:title" content="EPSL - Ejercicio Profesional Supervisado de Licenciatura | ECC USAC" />
+   <meta property="og:description" content="Portal oficial del Ejercicio Profesional Supervisado de Licenciatura de la Escuela de Ciencias de la Comunicación, USAC. Conoce los requisitos, fases y proceso completo." />
+   <meta property="og:image" content="https://epslecc.com/assets/images/hero/ecc-usac.png" />
+   <meta property="og:locale" content="es_GT" />
+   <meta property="og:site_name" content="EPSL ECC USAC" />
+
+   <!-- Twitter Card -->
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:url" content="https://epslecc.com/" />
+   <meta name="twitter:title" content="EPSL - Ejercicio Profesional Supervisado de Licenciatura | ECC USAC" />
+   <meta name="twitter:description" content="Portal oficial del Ejercicio Profesional Supervisado de Licenciatura de la Escuela de Ciencias de la Comunicación, USAC." />
+   <meta name="twitter:image" content="https://epslecc.com/assets/images/hero/ecc-usac.png" />
+
+   <!-- Canonical URL -->
+   <link rel="canonical" href="https://epslecc.com/" />
+
    <!-- Favicon icon-->
    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
@@ -14,6 +44,11 @@
    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
    <meta name="msapplication-TileColor" content="#8b3dff" />
    <meta name="msapplication-config" content="./assets/images/favicon/tile.xml" />
+
+   <!-- Preconnect to external domains for performance -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
    <!-- Color modes -->
    <script src="./assets/js/vendors/color-modes.js"></script>
@@ -27,17 +62,57 @@
 
    <!-- Box icons -->
    <link rel="stylesheet" href="./assets/fonts/css/boxicons.min.css" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
    <!-- Theme CSS -->
    <link rel="stylesheet" href="./assets/css/theme.min.css" />
 
-   <!-- Google Fotnts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+   <!-- Enterprise CSS -->
+   <link rel="stylesheet" href="./assets/css/enterprise.css" />
 
-   <title>Inicio | EPSL ECC USAC</title>
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet" />
+
+   <title>EPSL - Ejercicio Profesional Supervisado de Licenciatura | ECC USAC</title>
+
+   <!-- Structured Data / Schema.org -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "EducationalOrganization",
+     "name": "Ejercicio Profesional Supervisado de Licenciatura - ECC USAC",
+     "alternateName": "EPSL ECC USAC",
+     "url": "https://epslecc.com",
+     "logo": "https://epslecc.com/assets/images/hero/ecc-usac.png",
+     "description": "Ejercicio Profesional Supervisado de Licenciatura de la Escuela de Ciencias de la Comunicación, Universidad de San Carlos de Guatemala",
+     "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Ciudad Universitaria Zona 12",
+       "addressLocality": "Guatemala",
+       "addressRegion": "Guatemala",
+       "addressCountry": "GT"
+     },
+     "parentOrganization": {
+       "@type": "EducationalOrganization",
+       "name": "Universidad de San Carlos de Guatemala",
+       "url": "https://usac.edu.gt"
+     },
+     "department": {
+       "@type": "EducationalOrganization",
+       "name": "Escuela de Ciencias de la Comunicación",
+       "url": "https://comunicacion.usac.edu.gt"
+     }
+   }
+   </script>
+
+   <!-- Google Analytics - Replace with your tracking ID -->
+   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'GA_MEASUREMENT_ID');
+   </script> -->
 </head>
 
 <body>
@@ -190,65 +265,83 @@
 
    <main>
    <!--hero section start-->
-   <section class="right-slant-shape bg-info-dark pb-10 pt-4" data-cue="fadeIn">
+   <section class="right-slant-shape bg-info-dark pb-10 pt-4 hero-section" data-cue="fadeIn">
    <div class="container">
       <div class="row">
          <div class="col-lg-8 offset-lg-2 col-md-12 position-relaive">
             <div class="text-white-stable text-center position-relaive my-lg-8 my-6" data-cue="zoomIn">
-               <!-- <span class="fw-medium fs-4">Bienvenido y bienvenida al</span> -->
-               <h1 class="text-white-stable display-3 mt-3 mb-3">Ejercicio Profesional Supervisado de Licenciatura</h1>
-               <p class="mb-0 pb-8 px-lg-7 text-opacity-75 lead">
-                  Es una alternativa que permite la Escuela de Ciencias de la Comunicación para poder optar al título de Licenciatura.
+               <span class="fw-medium fs-4 mb-3 d-block text-opacity-90 hero-subtitle">Bienvenido/a al</span>
+               <h1 class="text-white-stable display-3 mt-3 mb-4 hero-title">Ejercicio Profesional Supervisado de Licenciatura</h1>
+               <p class="mb-5 pb-3 px-lg-7 text-opacity-75 lead hero-subtitle">
+                  Logra tu título de Licenciatura en Ciencias de la Comunicación a través de esta alternativa profesional que te permite aplicar tus conocimientos en el campo real.
                </p>
+               <div class="hero-cta d-flex gap-3 justify-content-center flex-wrap">
+                  <a href="requisitos-inscripcion-eps-ecc-usac.html" class="btn btn-primary btn-lg px-4" aria-label="Ver requisitos de inscripción">
+                     <i class="bi bi-file-text me-2"></i>Ver Requisitos
+                  </a>
+                  <a href="#timeline-section" class="btn btn-light btn-lg px-4" aria-label="Conocer el proceso">
+                     <i class="bi bi-map me-2"></i>Conocer el Proceso
+                  </a>
+               </div>
             </div>
          </div>
       </div>
    </div>
    <div class="position-absolute z-1 w-100 text-center top-25 mt-n8" data-cue="zoomIn">
-       <img src="assets/images/hero/ecc-usac.png" alt="avatar" class="rounded-circle shadow-sm border border-white border-3" />
+       <img src="assets/images/hero/ecc-usac.png" alt="Logo de la Escuela de Ciencias de la Comunicación USAC" class="rounded-circle shadow-sm border border-white border-3" width="120" height="120" loading="eager" />
    </div>
    </section>
    <!--hero section end-->
-   <!--forword together-->
-   <section class="my-lg-9 my-5 py-7">
+   <!--pilares section-->
+   <section class="my-lg-9 my-5 py-7" id="pilares-section">
          <div class="container">
             <div class="row">
                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-                  <div class="text-center mb-xl-7 mb-5">
-                     <h2 class="mb-0">Estos son nuestros pilares de excelencia</h2>
+                  <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
+                     <span class="text-primary fw-semibold text-uppercase mb-2 d-block">Nuestro Compromiso</span>
+                     <h2 class="mb-3">Pilares de Excelencia Académica</h2>
+                     <p class="text-muted">Comprometidos con la formación integral de profesionales en ciencias de la comunicación</p>
                   </div>
                </div>
             </div>
             <div class="row g-lg-7 gy-5">
-               <div class="col-lg-4 col-md-4">
-                  <div class="mb-5">
-                     <i class="bi bi-rocket-fill" style="font-size: 30px;"></i>
+               <div class="col-lg-4 col-md-4" data-cue="slideInUp">
+                  <div class="card card-lift h-100 border-0 shadow-sm">
+                     <div class="card-body text-center p-4">
+                        <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 p-4">
+                           <i class="bi bi-rocket-fill text-primary" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="mb-3">Misión</h4>
+                        <p class="mb-0 text-muted">Formar profesionales integrales, capaces de plantear y desarrollar proyectos de investigación de calidad y desenvolverse en los diferentes campos de las ciencias de la comunicación.</p>
+                     </div>
                   </div>
-
-                  <h4>Misión</h4>
-                  <p class="mb-0">Formar profesionales integrales, capaces de plantear y desarrollar proyectos de investigación de calidad y desenvolverse en los diferentes campos de las ciencias de la comunicación.</p>
                </div>
-               <div class="col-lg-4 col-md-4">
-                  <div class="mb-5">
-                     <i class="bi bi-eye-fill" style="font-size: 30px;"></i>
+               <div class="col-lg-4 col-md-4" data-cue="slideInUp" data-delay="100">
+                  <div class="card card-lift h-100 border-0 shadow-sm">
+                     <div class="card-body text-center p-4">
+                        <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle bg-success bg-opacity-10 p-4">
+                           <i class="bi bi-eye-fill text-success" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="mb-3">Visión</h4>
+                        <p class="mb-0 text-muted">Formar profesionales de las ciencias de la comunicación, capaces de intervenir humana, técnica y científicamente en el proceso de transformación y liberación de Guatemala.</p>
+                     </div>
                   </div>
-
-                  <h4>Visión</h4>
-                  <p class="mb-0">Formar profesionales de las ciencias de la comunicación, capaces de intervenir humana, técnica y científicamente en el proceso de transformación y liberación de Guatemala.
-                  </p>
                </div>
-               <div class="col-lg-4 col-md-4">
-                  <div class="mb-5">
-                     <i class="bi bi-bullseye" style="font-size: 30px;"></i>
+               <div class="col-lg-4 col-md-4" data-cue="slideInUp" data-delay="200">
+                  <div class="card card-lift h-100 border-0 shadow-sm">
+                     <div class="card-body text-center p-4">
+                        <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle bg-info bg-opacity-10 p-4">
+                           <i class="bi bi-bullseye text-info" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="mb-3">Propósito</h4>
+                        <p class="mb-0 text-muted">Formar profesionales capaces de investigar, informar y orientar los diversos hechos sociales para que desarrollen una dinámica y eficiente función en la resolución de la problemática nacional.</p>
+                     </div>
                   </div>
-                  <h4>Propósito</h4>
-                  <p class="mb-0">Formar profesionales capaces de investigar, informar y orientar los diversos hechos sociales para que desarrollen una dinámica y eficiente función en la resolución de la problemática nacional. </p>
-
                </div>
             </div>
          </div>
    </section>
-   <!--forword together-->
+   <!--pilares section end-->
 
     <!--project idea-->
 <section class="py-lg-8 py-5 bg-gray-900">
@@ -712,6 +805,7 @@
             d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
       </svg>
    </div>
+
    <!-- Libs JS -->
    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
    <script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
@@ -720,12 +814,31 @@
    <!-- Theme JS -->
    <script src="./assets/js/theme.min.js"></script>
 
+   <!-- Scroll Cue -->
    <script src="./assets/libs/scrollcue/scrollCue.min.js"></script>
    <script src="./assets/js/vendors/scrollcue.js"></script>
+
+   <!-- Enterprise JS - Advanced Features -->
+   <script src="./assets/js/enterprise.js"></script>
+
+   <!-- Utilities -->
    <script>
+      // Current year for footer
       const currentYear = new Date().getFullYear();
       document.getElementById('currentYear').textContent = currentYear;
-    </script>
+
+      // Service Worker for PWA capabilities (optional)
+      if ('serviceWorker' in navigator) {
+         window.addEventListener('load', () => {
+            // Uncomment to enable PWA
+            // navigator.serviceWorker.register('/sw.js');
+         });
+      }
+
+      // Console branding
+      console.log('%c🎓 EPSL ECC USAC ', 'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-size: 20px; padding: 10px; border-radius: 5px;');
+      console.log('%cSistema Empresarial v2.0 🚀', 'color: #667eea; font-size: 14px; font-weight: bold;');
+   </script>
 </body>
 
 </html>
