@@ -1,0 +1,830 @@
+/**
+ * EPSL ECC USAC - PREMIUM ENHANCEMENTS
+ * Ultra-professional design elements
+ * Version: 3.0 PREMIUM
+ */
+
+/* ========================================
+   ANIMATED GRADIENT BACKGROUNDS
+   ======================================== */
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-animated {
+    background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #4facfe);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+}
+
+.gradient-mesh {
+    background:
+        radial-gradient(at 27% 37%, hsla(215, 98%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+        radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    opacity: 0.3;
+    filter: blur(100px);
+}
+
+/* ========================================
+   PREMIUM LOADER
+   ======================================== */
+
+.premium-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.premium-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 2rem;
+    animation: pulse-scale 2s ease-in-out infinite;
+}
+
+@keyframes pulse-scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.loader-spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loader-text {
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: fade-in-out 1.5s ease-in-out infinite;
+}
+
+@keyframes fade-in-out {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.loader-progress {
+    width: 300px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.loader-progress-bar {
+    height: 100%;
+    background: white;
+    border-radius: 2px;
+    animation: progress-load 2s ease-in-out;
+}
+
+@keyframes progress-load {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   CUSTOM CURSOR
+   ======================================== */
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #667eea;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: all 0.1s ease;
+    mix-blend-mode: difference;
+}
+
+.cursor-follower {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(102, 126, 234, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transition: all 0.3s ease;
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.cursor.active {
+    transform: scale(1.5);
+    background: rgba(102, 126, 234, 0.3);
+}
+
+.cursor-follower.active {
+    transform: scale(0.5);
+}
+
+/* Hide custom cursor on touch devices */
+@media (hover: none) {
+    .cursor,
+    .cursor-follower {
+        display: none;
+    }
+}
+
+/* ========================================
+   GLASSMORPHISM PREMIUM
+   ======================================== */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 8px 32px 0 rgba(31, 38, 135, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-dark {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   NEUMORPHISM ELEMENTS
+   ======================================== */
+
+.neomorph {
+    background: #e0e5ec;
+    box-shadow:
+        9px 9px 16px rgba(163, 177, 198, 0.6),
+        -9px -9px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.neomorph:hover {
+    box-shadow:
+        6px 6px 12px rgba(163, 177, 198, 0.6),
+        -6px -6px 12px rgba(255, 255, 255, 0.5);
+}
+
+.neomorph-inset {
+    background: #e0e5ec;
+    box-shadow:
+        inset 6px 6px 12px rgba(163, 177, 198, 0.6),
+        inset -6px -6px 12px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+/* ========================================
+   PREMIUM TOOLTIPS
+   ======================================== */
+
+.tooltip-premium {
+    position: absolute;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    pointer-events: none;
+    z-index: 10000;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.tooltip-premium::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.tooltip-premium.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px);
+}
+
+.tooltip-premium.top::before {
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px 8px 0 8px;
+    border-color: #764ba2 transparent transparent transparent;
+}
+
+/* ========================================
+   PREMIUM PROGRESS BARS (Circular)
+   ======================================== */
+
+.circular-progress {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.circular-progress svg {
+    transform: rotate(-90deg);
+}
+
+.circular-progress circle {
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+.circular-progress .bg-circle {
+    stroke: rgba(102, 126, 234, 0.1);
+}
+
+.circular-progress .progress-circle {
+    stroke: url(#gradient);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 2s ease;
+}
+
+.circular-progress.animated .progress-circle {
+    stroke-dashoffset: 0;
+}
+
+.circular-progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.circular-progress-number {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.circular-progress-label {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+
+/* ========================================
+   PARTICLE BACKGROUND
+   ======================================== */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.particles-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ========================================
+   PREMIUM CARDS WITH 3D EFFECT
+   ======================================== */
+
+.card-3d {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card-3d-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-3d:hover .card-3d-inner {
+    transform: rotateY(5deg) rotateX(5deg);
+}
+
+.card-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-shine::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.card-shine:hover::before {
+    transform: translateX(100%);
+}
+
+/* ========================================
+   FLOATING ANIMATIONS
+   ======================================== */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-animation-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/* ========================================
+   PARALLAX LAYERS
+   ======================================== */
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.parallax-bg {
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax-mid {
+    transform: translateZ(-0.5px) scale(1.5);
+}
+
+.parallax-front {
+    transform: translateZ(0);
+}
+
+/* ========================================
+   PREMIUM MODAL/LIGHTBOX
+   ======================================== */
+
+.premium-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.premium-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.premium-modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.premium-modal.active .premium-modal-content {
+    transform: scale(1);
+}
+
+.premium-modal-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.premium-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+}
+
+/* ========================================
+   SWIPER CAROUSEL PREMIUM
+   ======================================== */
+
+.swiper-premium {
+    padding: 3rem 0 !important;
+}
+
+.swiper-premium .swiper-slide {
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.swiper-premium .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.swiper-premium .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #667eea;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.swiper-premium .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 30px;
+    border-radius: 6px;
+}
+
+.swiper-premium .swiper-button-next,
+.swiper-premium .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background: rgba(102, 126, 234, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    color: #667eea;
+    transition: all 0.3s ease;
+}
+
+.swiper-premium .swiper-button-next:hover,
+.swiper-premium .swiper-button-prev:hover {
+    background: rgba(102, 126, 234, 0.2);
+    transform: scale(1.1);
+}
+
+/* ========================================
+   SCROLL REVEAL PREMIUM
+   ======================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ========================================
+   PREMIUM BUTTONS WITH EFFECTS
+   ======================================== */
+
+.btn-glow {
+    position: relative;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+    transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 30px rgba(102, 126, 234, 0.8);
+    transform: translateY(-2px);
+}
+
+.btn-gradient-border {
+    position: relative;
+    background: white;
+    color: #667eea;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.btn-gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+/* ========================================
+   ICON BOXES PREMIUM
+   ======================================== */
+
+.icon-box-premium {
+    position: relative;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.icon-box-premium::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.icon-box-premium:hover::before {
+    opacity: 0.05;
+}
+
+.icon-box-premium:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   BADGE & TAG PREMIUM
+   ======================================== */
+
+.badge-premium {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.tag-premium {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tag-premium:hover {
+    background: rgba(102, 126, 234, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   PREMIUM INPUTS & FORMS
+   ======================================== */
+
+.input-premium {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(102, 126, 234, 0.2);
+    border-radius: 12px;
+    color: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-premium:focus {
+    outline: none;
+    border-color: #667eea;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+}
+
+.input-premium::placeholder {
+    color: rgba(108, 117, 125, 0.5);
+}
+
+/* ========================================
+   SPLIT TEXT ANIMATION
+   ======================================== */
+
+.split-text {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.split-text .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideUp 0.8s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   MORPHING BLOB BACKGROUNDS
+   ======================================== */
+
+@keyframes morph {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+
+.blob {
+    position: absolute;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    opacity: 0.15;
+    filter: blur(60px);
+    animation: morph 8s ease-in-out infinite;
+}
+
+.blob-1 {
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    left: -200px;
+}
+
+.blob-2 {
+    width: 500px;
+    height: 500px;
+    bottom: -250px;
+    right: -250px;
+    animation-delay: 2s;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    .circular-progress {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circular-progress-number {
+        font-size: 1.5rem;
+    }
+
+    .blob-1,
+    .blob-2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .premium-modal-content {
+        padding: 1.5rem;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    .premium-loader,
+    .cursor,
+    .cursor-follower,
+    #particles-js {
+        display: none !important;
+    }
+}
